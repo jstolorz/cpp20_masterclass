@@ -3,4 +3,4 @@ project(cpp20_masterclass)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(cpp20_masterclass main.cpp lessons/Section6.cpp lessons/Section6.h lessons/Section7.cpp lessons/Section7.h lessons/Section8.cpp lessons/Section8.h)
+add_executable(cpp20_masterclass main.cpp lessons/Section6.cpp lessons/Section6.h lessons/Section7.cpp lessons/Section7.h lessons/Section8.cpp lessons/Section8.h lessons/Section9.cpp lessons/Section9.h)
