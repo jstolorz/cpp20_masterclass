@@ -158,14 +158,15 @@ void Section8::section8() {
 
     std::cout << " Checking bit at position (on/off) " << std::bitset<8> (var) << std::endl;
 
-    std::cout << std::setw(COLUMN_WIDTH) << "bits0 is " << std::setw(COLUMN_WIDTH) << static_cast<int>((var & mask_bit_0) >> 0) << std::endl;
-    std::cout << std::setw(COLUMN_WIDTH) << "bits1 is " << std::setw(COLUMN_WIDTH) << static_cast<int>((var & mask_bit_1) >> 1) << std::endl;
-    std::cout << std::setw(COLUMN_WIDTH) << "bits2 is " << std::setw(COLUMN_WIDTH) << ((var & mask_bit_2) >> 2) << std::endl;
-    std::cout << std::setw(COLUMN_WIDTH) << "bits3 is " << std::setw(COLUMN_WIDTH) << ((var & mask_bit_3) >> 3) << std::endl;
-    std::cout << std::setw(COLUMN_WIDTH) << "bits4 is " << std::setw(COLUMN_WIDTH) << ((var & mask_bit_4) >> 4) << std::endl;
-    std::cout << std::setw(COLUMN_WIDTH) << "bits5 is " << std::setw(COLUMN_WIDTH) << ((var & mask_bit_5) >> 5) << std::endl;
-    std::cout << std::setw(COLUMN_WIDTH) << "bits6 is " << std::setw(COLUMN_WIDTH) << ((var & mask_bit_6) >> 6) << std::endl;
-    std::cout << std::setw(COLUMN_WIDTH) << "bits7 is " << std::setw(COLUMN_WIDTH) << ((var & mask_bit_7) >> 7) << std::endl;
+    std::cout << std::boolalpha;
+    std::cout << std::setw(COLUMN_WIDTH) << "bits0 is " << std::setw(COLUMN_WIDTH) << static_cast<bool>((var & mask_bit_0) >> 0) << std::endl;
+    std::cout << std::setw(COLUMN_WIDTH) << "bits1 is " << std::setw(COLUMN_WIDTH) << static_cast<bool>((var & mask_bit_1) >> 1) << std::endl;
+    std::cout << std::setw(COLUMN_WIDTH) << "bits2 is " << std::setw(COLUMN_WIDTH) << static_cast<bool>((var & mask_bit_2) >> 2) << std::endl;
+    std::cout << std::setw(COLUMN_WIDTH) << "bits3 is " << std::setw(COLUMN_WIDTH) << static_cast<bool>((var & mask_bit_3) >> 3) << std::endl;
+    std::cout << std::setw(COLUMN_WIDTH) << "bits4 is " << std::setw(COLUMN_WIDTH) << static_cast<bool>((var & mask_bit_4) >> 4) << std::endl;
+    std::cout << std::setw(COLUMN_WIDTH) << "bits5 is " << std::setw(COLUMN_WIDTH) << static_cast<bool>((var & mask_bit_5) >> 5) << std::endl;
+    std::cout << std::setw(COLUMN_WIDTH) << "bits6 is " << std::setw(COLUMN_WIDTH) << static_cast<bool>((var & mask_bit_6) >> 6) << std::endl;
+    std::cout << std::setw(COLUMN_WIDTH) << "bits7 is " << std::setw(COLUMN_WIDTH) << static_cast<bool>((var & mask_bit_7) >> 7) << std::endl;
 
     if(((var & mask_bit_1) >> 1)){
         std::cout << "position 1 is set" << std::endl;
