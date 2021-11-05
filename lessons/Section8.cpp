@@ -4,6 +4,7 @@
 
 #include "Section8.h"
 
+
 void Section8::section8() {
 
     const int COLUMN_WIDTH {20};
@@ -11,16 +12,6 @@ void Section8::section8() {
     unsigned char value1 {0b00000011};
     unsigned char value2 {0b00000101};
     unsigned char sandbox_var {0b00110100};
-
-    // mask
-    unsigned char mask_bit_0 {0b00000001};
-    unsigned char mask_bit_1 {0b00000010};
-    unsigned char mask_bit_2 {0b00000100};
-    unsigned char mask_bit_3 {0b00001000};
-    unsigned char mask_bit_4 {0b00010000};
-    unsigned char mask_bit_5 {0b00100000};
-    unsigned char mask_bit_6 {0b01000000};
-    unsigned char mask_bit_7 {0b10000000};
 
     unsigned char var {0b00000000};
 
@@ -191,5 +182,32 @@ void Section8::section8() {
 
     std::cout << std::setw(COLUMN_WIDTH) << "var : " <<  std::setw(COLUMN_WIDTH)
               << std::bitset<8> (var) << std::endl;
+
+}
+
+void Section8::use_options_v0(bool flag0, bool flag1, bool flag2, bool flag3, bool flag4, bool flag5, bool flag6,
+                              bool flag7) {
+
+    std::cout << "Flag0 is : " << flag0 << ", do something with it." << std::endl;
+    std::cout << "Flag0 is : " << flag1 << ", do something with it." << std::endl;
+    std::cout << "Flag0 is : " << flag2 << ", do something with it." << std::endl;
+    std::cout << "Flag0 is : " << flag3 << ", do something with it." << std::endl;
+    std::cout << "Flag0 is : " << flag4 << ", do something with it." << std::endl;
+    std::cout << "Flag0 is : " << flag5 << ", do something with it." << std::endl;
+    std::cout << "Flag0 is : " << flag6 << ", do something with it." << std::endl;
+    std::cout << "Flag0 is : " << flag7 << ", do something with it." << std::endl;
+
+}
+
+void Section8::use_options_v1(unsigned char flags) {
+
+    std::cout << "Flag0 is : " << ((flags & mask_bit_0) >> 0) << ", do something with it." << std::endl;
+    std::cout << "Flag0 is : " << ((flags & mask_bit_1) >> 1)  << ", do something with it." << std::endl;
+    std::cout << "Flag0 is : " << ((flags & mask_bit_2) >> 2)  << ", do something with it." << std::endl;
+    std::cout << "Flag0 is : " << ((flags & mask_bit_3) >> 3)  << ", do something with it." << std::endl;
+    std::cout << "Flag0 is : " << ((flags & mask_bit_4) >> 4)  << ", do something with it." << std::endl;
+    std::cout << "Flag0 is : " << ((flags & mask_bit_5) >> 5)  << ", do something with it." << std::endl;
+    std::cout << "Flag0 is : " << ((flags & mask_bit_6) >> 6)  << ", do something with it." << std::endl;
+    std::cout << "Flag0 is : " << ((flags & mask_bit_7) >> 7)  << ", do something with it." << std::endl;
 
 }
