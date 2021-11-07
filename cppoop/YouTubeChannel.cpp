@@ -81,5 +81,5 @@ CookingYouTubeChannel::CookingYouTubeChannel(const std::string &name, const std:
                                             : YouTubeChannel(name, ownerName) {}
 
 void CookingYouTubeChannel::practice() {
-   std::cout << "practicing cooking. learning new recipes, experimenting with spices ... " << std::endl;
+   std::cout << getOwnerName() << "practicing cooking. learning new recipes, experimenting with spices ... " << std::endl;
 }
