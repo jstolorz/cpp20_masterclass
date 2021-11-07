@@ -9,6 +9,7 @@
 #include <list>
 
 class YouTubeChannel {
+
    std::string name;
    std::string ownerName;
    int subscribersCount;
@@ -18,7 +19,9 @@ public:
 
     YouTubeChannel();
 
-    YouTubeChannel(const std::string &name, const std::string &ownerName, int subscribersCount,
+    YouTubeChannel(const std::string &name, const std::string &ownerName);
+
+    YouTubeChannel(const std::string &name, const std::string &ownerName,
                    const std::list<std::string> &publishedVideoTitles);
 
     const std::string &getName() const;
@@ -31,14 +34,26 @@ public:
 
     int getSubscribersCount() const;
 
-    void setSubscribersCount(int subscribersCount);
-
     const std::list<std::string> &getPublishedVideoTitles() const;
 
     void setPublishedVideoTitles(const std::list<std::string> &publishedVideoTitles);
 
+    void subscribe();
+
+    void unsubscribe();
+
+
+
     static void objectTest();
 
+
+};
+
+class CookingYouTubeChannel : public YouTubeChannel{
+public:
+    CookingYouTubeChannel(const std::string &name, const std::string &ownerName);
+
+    void practice();
 };
 
 
