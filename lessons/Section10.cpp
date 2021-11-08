@@ -71,6 +71,20 @@ void Section10::section10() {
         std::cout << "Condition is false" << std::endl;
     }
 
+    // if initializer
+    bool go{false};
+
+    if(int high_speed{33}; go){
+        if(high_speed > 5){
+            std::cout << "Slow down!" << std::endl;
+        } else{
+            std::cout << "All good!" << std::endl;
+        }
+    } else{
+        std::cout << "high_speed : " << high_speed << std::endl;
+        std::cout << "Stop" << std::endl;
+    }
+
 }
 
 bool Section10::car() {
