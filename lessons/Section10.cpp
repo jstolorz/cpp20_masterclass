@@ -48,6 +48,29 @@ void Section10::section10() {
         std::cout << "Sorry. We have no item"  << std::endl;
     }
 
+    int a{35};
+    int b{20};
+
+    int max = (a > b) ? a : b;
+
+    std::cout << max << std::endl;
+
+    bool fast{false};
+
+    int speed {fast ? 300 : 150};
+
+    std::cout << speed << std::endl;
+
+    // constexpr compile time computation cpp 17
+
+    constexpr bool condition{false};
+
+    if constexpr(condition){
+        std::cout << "Condition is true" << std::endl;
+    }else{
+        std::cout << "Condition is false" << std::endl;
+    }
+
 }
 
 bool Section10::car() {
