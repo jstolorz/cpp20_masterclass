@@ -40,6 +40,14 @@ void Section10::section10() {
         std::cout << " I am sad"  << std::endl;
     }
 
+    int item_count{-3};
+
+    if(item_count){
+        std::cout << "We have item" << std::endl;
+    }else{
+        std::cout << "Sorry. We have no item"  << std::endl;
+    }
+
 }
 
 bool Section10::car() {
