@@ -3,9 +3,9 @@
 
 int main() {
 
-    //Section10::section10();
+    Section10::section10();
 
-    YouTubeChannel::objectTest();
+    //YouTubeChannel::objectTest();
 
     return 0;
 }

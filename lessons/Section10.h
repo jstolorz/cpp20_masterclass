@@ -6,6 +6,10 @@
 class Section10 {
 public:
    static void section10();
+   static bool car();
+   static bool house();
+   static bool job();
+   static bool spouse();
 };
 
 

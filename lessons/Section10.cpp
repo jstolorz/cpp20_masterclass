@@ -24,4 +24,40 @@ void Section10::section10() {
             break;
     };
 
+    std::cout << "AND" << std::endl;
+
+    if(car() && house() && job() && spouse()){
+        std::cout << " I am happy"  << std::endl;
+    } else{
+        std::cout << " I am sad"  << std::endl;
+    }
+
+    std::cout << "OR" << std::endl;
+
+    if(car() || house() || job() || spouse()){
+        std::cout << " I am happy"  << std::endl;
+    } else{
+        std::cout << " I am sad"  << std::endl;
+    }
+
+}
+
+bool Section10::car() {
+    std::cout << "car function running" << std::endl;
+    return true;
+}
+
+bool Section10::house() {
+    std::cout << "house function running" << std::endl;
+    return false;
+}
+
+bool Section10::job() {
+    std::cout << "job function running" << std::endl;
+    return true;
+}
+
+bool Section10::spouse() {
+    std::cout << "spouse function running" << std::endl;
+    return true;
 }
