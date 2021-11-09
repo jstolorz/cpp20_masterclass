@@ -11,15 +11,21 @@ void Section10::section10() {
 
     int tool{marker};
 
-    switch (tool) {
-        case pen:
+    switch (int y{2};tool) {
+        case pen: {
+
             std::cout << "Active tool is pen " << std::endl;
+            y = 6;
             break;
-        case marker:
+        }
+        case marker: {
+            y = 9;
             std::cout << "Active tool is marker " << std::endl;
             std::cout << "Active tool is marker2 " << std::endl;
             break;
+        }
         default:
+            y = 8;
             std::cout << "Can't match any tool" << std::endl;
             break;
     };
@@ -84,6 +90,8 @@ void Section10::section10() {
         std::cout << "high_speed : " << high_speed << std::endl;
         std::cout << "Stop" << std::endl;
     }
+
+
 
 }
 
