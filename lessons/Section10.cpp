@@ -90,7 +90,145 @@ void Section10::section10() {
         std::cout << "high_speed : " << high_speed << std::endl;
         std::cout << "Stop" << std::endl;
     }
+//
+//    int test{0};
+//
+//    std::cout << "Please type in an int value : ";
+//    std::cin >> test;
+//
+//    std::string  result = (test % 2 == 0) ? " is even " : " is odd";
+//
+//    std::cout << test << result << std::endl;
 
+//      int age{0};
+//
+//      std::cout << "Please type your age: ";
+//      std::cin >> age;
+//
+//      if(age >= 21){
+//          if(age <= 39){
+//              std::cout << "You are eligible for the treatment" << std::endl;
+//          }else{
+//              std::cout << "Sorry you are too old for the treatment " << std::endl;
+//          }
+//      }else{
+//          std::cout << "Sorry you are too young for the treatment " << std::endl;
+//      }
+
+//    Monday Tuesday Wednesday Thursday Friday Saturday Sunday
+
+//    switch (day) {
+//        case 1:
+//            std::cout << "Today is Monday " << std::endl;
+//            break;
+//        case 2:
+//            std::cout << "Today is Tuesday " << std::endl;
+//            break;
+//        case 3:
+//            std::cout << "Today is Wednesday " << std::endl;
+//            break;
+//        case 4:
+//            std::cout << "Today is Thursday " << std::endl;
+//            break;
+//        case 5:
+//            std::cout << "Today is Friday " << std::endl;
+//            break;
+//        case 6:
+//            std::cout << "Today is Saturday " << std::endl;
+//            break;
+//        case 7:
+//            std::cout << "Today is Sunday " << std::endl;
+//            break;
+//        default:
+//            std::cout << day <<  " is not a valid day of week ! " << std::endl;
+//            break;
+//    }
+//
+//    int day{0};
+//    int past{0};
+//
+//    std::cout << "With day is today [1: Monday, 2: Tuesday, 3: Wednesday, 4: Thursday, 5: Friday, 6: Saturday, 7: Sunday] ? ";
+//    std::cin >> day;
+//
+//    std::cout << "How many days have passed up to today : ";
+//    std::cin >> past;
+//
+//
+//        switch (day) {
+//        case 1:
+//            std::cout << "Today is Monday " << std::endl;
+//            break;
+//        case 2:
+//            std::cout << "Today is Tuesday " << std::endl;
+//            break;
+//        case 3:
+//            std::cout << "Today is Wednesday " << std::endl;
+//            break;
+//        case 4:
+//            std::cout << "Today is Thursday " << std::endl;
+//            break;
+//        case 5:
+//            std::cout << "Today is Friday " << std::endl;
+//            break;
+//        case 6:
+//            std::cout << "Today is Saturday " << std::endl;
+//            break;
+//        case 7:
+//            std::cout << "Today is Sunday " << std::endl;
+//            break;
+//        default:
+//            std::cout << day <<  " is not a valid day of week ! " << std::endl;
+//            break;
+//    }
+//
+//    int res = (day - 1) - past;
+//
+//    int res2 = res/7;
+//
+//    res2 = res2 * 7;
+//
+//    switch (res2 - res) {
+//        case 7:
+//            std::cout << "if we  Monday " << std::endl;
+//            break;
+//        case 6:
+//            std::cout << "Today is Tuesday " << std::endl;
+//            break;
+//        case 5:
+//            std::cout << "Today is Wednesday " << std::endl;
+//            break;
+//        case 4:
+//            std::cout << "Today is Thursday " << std::endl;
+//            break;
+//        case 3:
+//            std::cout << "Today is Friday " << std::endl;
+//            break;
+//        case 2:
+//            std::cout << "Today is Saturday " << std::endl;
+//            break;
+//        case 1:
+//            std::cout << "Today is Sunday " << std::endl;
+//            break;
+//        default:
+//            std::cout << day <<  " is not a valid day of week ! " << std::endl;
+//            break;
+//    }
+//
+
+//     int x{0};
+//     int y{0};
+//
+//     std::cout << "Type in your x location: ";
+//     std::cin >> x;
+//
+//    std::cout << "Type in your y location: ";
+//    std::cin >> y;
+//
+//     if((x >= -10 && x <= 10) && (y >= -5 && y <= 5)){
+//         std::cout << " You are completely surrounded. Don't move!" << std::endl;
+//     }else{
+//         std::cout << "You're out of range! " << std::endl;
+//     }
 
 
 }
