@@ -90,4 +90,8 @@ void Section11::section11() {
         std::cout << "index = " << index << std::endl;
     }
 
+    for(auto multiplier{4}; int value : {1,2,3,4,5,6,7}){
+        std::cout <<"result : " << (value * multiplier) << std::endl;
+    }
+
 }
