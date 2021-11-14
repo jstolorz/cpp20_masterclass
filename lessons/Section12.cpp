@@ -35,4 +35,13 @@ void Section12::section12() {
     }
 
     std::cout << "Sorted ? " << sorted << std::endl;
+
+    char message[6] {'H','e','l','l','o','\0'};
+
+    std::cout << message << std::endl;
+
+    char message2[] {"Hello"};
+
+    std::cout << message2 << std::endl;
+
 }
