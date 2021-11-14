@@ -3,6 +3,7 @@
 void Section12::section12() {
 
     int numbers[] {1, 2, 4, 5, 1, 8, 2, 3, 6, 1, 4, 2};
+    //int numbers[] {1,2,3,5,7,9,100};
     int count{};
 
     for (int i = 0; i < std::size(numbers); ++i) {
@@ -20,4 +21,18 @@ void Section12::section12() {
         if(numbers[i] != -101)
         std::cout << numbers[i] << " ";
     }
+
+    bool sorted{true};
+
+    for (int i = 0; i < std::size(numbers); ++i) {
+        if(i == 0){
+            continue;
+        }
+
+        if(numbers[i-1] > numbers[i]){
+            sorted = false;
+        }
+    }
+
+    std::cout << "Sorted ? " << sorted << std::endl;
 }
