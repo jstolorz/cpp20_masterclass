@@ -2,10 +2,11 @@
 #define CPP20_MASTERCLASS_SECTION11_H
 
 #include <iostream>
+#include <vector>
 
 class Section11 {
 public:
-   static void section11();
+    static void section11();
 };
 
 
