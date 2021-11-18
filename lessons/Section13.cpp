@@ -76,6 +76,69 @@ void Section13::section13() {
 
     std::cout << students[0] << std::endl;
 
+    int data[] {11,2,52,53,9,13,5,7,12,11};
+
+
+    int* max_address{data};
+
+    for(unsigned int i = 0; i < std::size(data); ++i){
+        if(*max_address < data[i]){
+            max_address = &data[i];
+        }
+    }
+
+    std::cout << *max_address << std::endl;
+
+
+    int arr0[]{1,2,3,4,5};
+    int arr1[]{6,7,8,9,10};
+
+    std::for_each(arr0, arr0 + sizeof(arr0)/sizeof(int), [](int i){std::cout << i << " ";});
+    std::cout << std::endl;
+    std::for_each(arr1, arr1 + sizeof(arr1)/sizeof(int), [](int i){std::cout << i << " ";});
+    std::cout << std::endl;
+
+    // swap array swap pointer
+    int* p_arr0{arr0};
+    int* p_arr1{arr1};
+    int* temp{arr1};
+
+    p_arr1 = p_arr0;
+    p_arr0 = temp;
+
+    int scores[] {11,12,13,14,15,16,17,18,19,20};
+    int* p_scores{scores};
+
+    *(p_scores + 1) = 33;
+
+    std::cout << "Address : " << p_scores << " value : "  << *(p_scores) << std::endl;
+    ++p_scores;
+    std::cout << "Address : " << p_scores << " value : "  << *(p_scores) << std::endl;
+    ++p_scores;
+    std::cout << "Address : " << p_scores << " value : "  << *(p_scores) << std::endl;
+    ++p_scores;
+    std::cout << "Address : " << p_scores << " value : "  << *(p_scores + 2) << std::endl;
+
+    unsigned int offset{3};
+
+    std::cout << "The element " << offset << " slots away from the beginning is : "  << *(scores + offset) << std::endl;
+
+    int* pointer1{scores + 1};
+    int* pointer2{scores+ 7};
+
+    std::cout << pointer2 - pointer1 << std::endl;
+    std::cout << (pointer2 == pointer1) << std::endl;
+    std::cout << (pointer2 != pointer1) << std::endl;
+    std::cout << (pointer2 >= pointer1) << std::endl;
+    std::cout << (pointer2 <= pointer1) << std::endl;
+
+    int* p_number{nullptr};
+
+    p_number = new int;
+
+    delete p_number;
+    p_number = nullptr;
+
 
 
 

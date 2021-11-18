@@ -2,6 +2,7 @@
 #define CPP20_MASTERCLASS_SECTION13_H
 
 #include <iostream>
+#include <algorithm>
 
 class Section13 {
 public:
