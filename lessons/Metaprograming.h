@@ -40,6 +40,8 @@ class Metaprograming {
     // Simple functiom: identity
     int int_identity(int x);
 
+
+
 public:
     // Variable template _v
     template<auto X>
