@@ -166,7 +166,7 @@ void Section13::section13() {
 
       size_t size{10};
 
-      double* p_salaries{new(std::nothrow) double[size]};
+      double* p_salaries{new(std::nothrow) double[size]}; // not like array in stack that is pointer so std::size() dosn't work and for each loop too !!
 
     for (int i = 0; i < size; ++i) {
         *(p_salaries + i) = i * 2.44;
