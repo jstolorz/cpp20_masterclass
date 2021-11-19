@@ -132,15 +132,51 @@ void Section13::section13() {
     std::cout << (pointer2 >= pointer1) << std::endl;
     std::cout << (pointer2 <= pointer1) << std::endl;
 
+    // Dynamic allocation
     int* p_number{nullptr};
 
     p_number = new int;
 
+    *p_number = 101;
+
+    std::cout << *p_number << std::endl;
+
     delete p_number;
     p_number = nullptr;
+//
+//    for(size_t i{}; i < 1000000000; ++i){
+//        int* lots_of_ints{new(std::nothrow) int[10000000]};
+//
+//        if(lots_of_ints == nullptr){
+//            std::cout << "Memory allocation failed" << std::endl;
+//        }else{
+//            std::cout << "Memory allocation succeeded" << std::endl;
+//        }
+//    }
+//
+//    std::cout << "End lots of int init" << std::endl;
 
+//    for(size_t i{}; i < 100; ++i){
+//        try {
+//            int* data = new int[10000000];
+//        }catch (std::exception& ex){
+//            std::cout << "Something wrong: " << ex.what() << std::endl;
+//        }
+//    }
 
+      size_t size{10};
 
+      double* p_salaries{new(std::nothrow) double[size]};
 
+    for (int i = 0; i < size; ++i) {
+        *(p_salaries + i) = i * 2.44;
+    }
+
+    for (int i = 0; i < size; ++i) {
+        std::cout << p_salaries[i] << " " << *(p_salaries + i) << " " << (p_salaries + i) << std::endl;
+    }
+
+      delete[] p_salaries;
+      p_salaries = nullptr;
 
 }
