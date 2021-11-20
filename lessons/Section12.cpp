@@ -79,7 +79,10 @@ void Section12::section12() {
 
     std::cout << "The string : " << message << " has " << vowel_count << " vowels" << std::endl;
 
-    srand(std::time(0));
+
+    //srand(std::time(0));
+    auto t = time(nullptr);
+    std::srand(t);
 
     int random_num = std::rand() % 11;   // will be between [0-10]
     std::cout << random_num << std::endl;

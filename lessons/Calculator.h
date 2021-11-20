@@ -1,6 +1,7 @@
 #ifndef CPP20_MASTERCLASS_CALCULATOR_H
 #define CPP20_MASTERCLASS_CALCULATOR_H
 
+#include <ctime>
 #include <iostream>
 
 class Calculator {
