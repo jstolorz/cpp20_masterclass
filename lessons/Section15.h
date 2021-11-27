@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <cctype>
+#include <string>
 
 class Section15 {
 public:

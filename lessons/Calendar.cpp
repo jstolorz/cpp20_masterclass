@@ -42,7 +42,7 @@ void Calendar::calendar() {
                   << std::endl;
 
         std::cout << std::endl;
-        std::cout << "-- " << months[i] << " " << year << " ------------------" << std::endl;
+        //std::cout << "-- " << months[i] << " " << year << " ------------------" << std::endl;
 
         for (int j = 1,d=1; j < 50; ++j) {
 
