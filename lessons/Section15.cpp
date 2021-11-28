@@ -15,7 +15,7 @@ void Section15::section15() {
 
     for (size_t i = 0; i < std::size(message); ++i) {
         if(std::isblank(message[i])){
-            std::cout << "Found a blank character at index : [" << i << "]" << std::endl;
+            std::cout << "Found a blank character at index : [" << i << "] \n";
             ++blank_count;
         }
     }
@@ -55,10 +55,6 @@ void Section15::section15() {
 
     unsigned int vowel_count{};
     unsigned int consonant_count{};
-
-    for (unsigned int i = 0; i < std::size(data); ++i) {
-
-    }
 
     std::cout << "The string contains " << vowel_count << " vowels and "
               << consonant_count << " consonants" << std::endl;
@@ -176,6 +172,93 @@ void Section15::section15() {
     std::cout << sw1 << " " << sw2 << std::endl;
     sw1.swap(sw2);
     std::cout << sw1 << " " << sw2 << std::endl;
+
+    std::string str1{"Water was poured in the heater"};
+    std::string search_for{"ter"};
+
+    size_t found_pos = str1.find(search_for,4);
+
+    if(found_pos == std::string::npos){
+        std::cout << "npos : " << found_pos << std::endl;
+    }else{
+        std::cout << found_pos << std::endl;
+    }
+
+    std::string data3[]{"catching","iteration","fresh","iterative","outside","mercy"};
+    const char* key{"iter"};
+    int found{0};
+
+    std::string* matches = new std::string[std::size(data3)];
+
+    for (unsigned int i = 0; i < std::size(data3); ++i) {
+        if(data3[i].find(key) != std::string::npos){
+            matches[found] = data3[i];
+            ++found;
+        }
+    }
+
+    if(found != 0){
+        std::cout <<"Found " << found << " matches. They are: ";
+        for (unsigned int i = 0; i < found; ++i) {
+            std::cout << matches[i] << " ";
+        }
+        std::cout << std::endl;
+    }
+
+    delete[] matches;
+
+
+    float flout_var{23.66f};
+
+    std::string str_flout = std::to_string(flout_var);
+
+    std::cout << flout_var << " " << str_flout << std::endl;
+
+    float ff_var{std::stof(str_flout)};
+
+    std::cout << ff_var << std::endl;
+
+    std::cout << "He said \"Get out of here immediately!\" \n";
+
+    std::string  todo{R"(
+         Clean the house
+         Walk the dog
+         "Test"
+         Do Laundry
+         Pick groceries
+    )"};
+
+    std::cout << todo << "\n";
+
+    std::string path{};
+
+    path = R"(C:\Users\janusz\Downloads)";
+
+    std::cout << path << "\n";
+
+    // resolve problem with "()" C++ 11
+    std::string sentence{R"---(The message was "(Stay out of this!)")---"};
+
+    std::string message2 {R"(He said :  ("Stay out of this") and left)"};
+    std::cout << "message : " << message2 << std::endl;
+
+    // waist memory
+    // std::string message3{"Hello World"};
+    // std::string message_copy{message3};
+    //-------------------------------------------
+
+    // better version
+    std::string message3{"Hello World"};
+    std::string& message_copy{message3};
+
+    char* p1 = message3.data();
+    char* p2 = message_copy.data();
+
+    std::cout << &message3 << " " << &message_copy << "\n";
+
+    std::cout << (void*)p1 << " " << (void*)p2 << "\n";
+
+
 
 
 
