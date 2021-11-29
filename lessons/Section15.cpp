@@ -259,7 +259,36 @@ void Section15::section15() {
     std::cout << (void*)p1 << " " << (void*)p2 << "\n";
 
 
+    std::string_view sv{"Hello"};
+    std::string_view sv1{sv};
 
+    std::cout << sv << " " << sv1 << std::endl;
+
+    char word[] {"Dog"};
+    std::string_view sv2{word};
+
+    std::cout << word << " " << sv2 << std::endl;
+
+    word[1] = 'T';
+
+    std::cout << word << " " << sv2 << std::endl;
+
+    const char* c_string{"The animals have left the region"};
+    std::string_view sv10{c_string};
+
+    std::cout << sv10 <<std::endl;
+
+    sv10.remove_prefix(4);
+
+    std::cout << sv10 <<std::endl;
+
+    sv10.remove_suffix(10);
+
+    std::cout << sv10 <<std::endl;
+
+    std::cout << c_string << std::endl;
+
+    std::cout << sv10.data() << " -- " << sv10 << std::endl;
 
 
 }
