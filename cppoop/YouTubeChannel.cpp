@@ -41,17 +41,17 @@ void YouTubeChannel::objectTest() {
     youTubeChannel.setPublishedVideoTitles({"C++ for beginer",
                                             "HTML & CSS", "C++ OOP"});
 
-    std::cout << "Name : " << youTubeChannel.getName() << std::endl;
+    //std::cout << "Name : " << youTubeChannel.getName() << std::endl;
 
     for(std::string videoTitle: youTubeChannel.getPublishedVideoTitles()) {
-        std::cout << "Video title : " << videoTitle << std::endl;
+        //std::cout << "Video title : " << videoTitle << std::endl;
     }
 
     YouTubeChannel youTubeChannel1("Janusz",
                                    "Janusz",
                                    {"C++ for advanced","Node.js", "C++ 20"});
 
-    std::cout << "Name : " << youTubeChannel1.getName() << std::endl;
+    //std::cout << "Name : " << youTubeChannel1.getName() << std::endl;
 
 
 }
@@ -81,5 +81,5 @@ CookingYouTubeChannel::CookingYouTubeChannel(const std::string &name, const std:
                                             : YouTubeChannel(name, ownerName) {}
 
 void CookingYouTubeChannel::practice() {
-   std::cout << getOwnerName() << "practicing cooking. learning new recipes, experimenting with spices ... " << std::endl;
+  // std::cout << getOwnerName() << "practicing cooking. learning new recipes, experimenting with spices ... " << std::endl;
 }

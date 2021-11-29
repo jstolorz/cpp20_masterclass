@@ -1,6 +1,6 @@
 #include "Section6.h"
 
-constinit int age = 88;
+int age = 88;
 
 void Section6::section6() {
    std::cout << "section6" << std::endl;
