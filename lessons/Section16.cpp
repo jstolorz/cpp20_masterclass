@@ -1,7 +1,3 @@
-//
-// Created by jstol on 29.11.2021.
-//
-
 #include "Section16.h"
 
 unsigned int digit_sum(unsigned int forsum){
@@ -32,13 +28,55 @@ void show_odd(unsigned long long int value){
     }
 }
 
+int contains_character( const char* str , unsigned int size , char c){
+
+    for (unsigned int i = 0; i < size; ++i) {
+        //if(str[i] == c){
+        if(*(str+i) == c){
+            return i;
+        }
+
+        std::cout << *(str+i) << " ";
+    }
+    return -1;
+}
+
+void find_character(const char* str, unsigned int size, char c){
+    int index = contains_character(str,size,c);
+    if(index != -1){
+        std::cout << "Found character " << c << " at index " << index;
+    }else{
+        std::cout << "Could not find the character " << c << " in " << str;
+    }
+}
 
 void Section16::section16() {
 
-    show_odd(98723713);
+}
+
+void Section16::many_result(int *array) {
 
 }
 
-void Section16::many_result(int *) {
+void Section16::array_ref(double(&scores)[]) {
 
+}
+
+
+bool is_palindrome(unsigned long long int num)
+{
+    int digit;
+    int remainder;
+    unsigned long long int reversed=0;
+    digit = num;
+    while(digit>0)
+    {
+        remainder = digit%10;
+        reversed = (reversed*10)+remainder;
+        digit = digit/10;
+    }
+    if(reversed==num)
+        return true;
+    else
+        return false;
 }
