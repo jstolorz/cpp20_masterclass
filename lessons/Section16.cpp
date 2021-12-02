@@ -50,6 +50,10 @@ void find_character(const char* str, unsigned int size, char c){
     }
 }
 
+consteval int get_value(int m){
+    return 3 * m;
+}
+
 void Section16::section16() {
 
 }
