@@ -56,6 +56,13 @@ consteval int get_value(int m){
 
 void Section16::section16() {
 
+    std::string  str{"Hello World"};
+    int a{23};
+
+    [&](std::string_view str){
+        std::cout << str << " " << a << std::endl;
+    }(str);
+
 }
 
 void Section16::many_result(int *array) {
