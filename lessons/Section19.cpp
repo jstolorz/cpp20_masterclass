@@ -66,6 +66,13 @@ int& max_input_by_value(int a, int b){
     }
 }
 
+auto& amax(int& a, int& b){
+    if(a>b){
+        return a;
+    }else{
+        return b;
+    }
+}
 
 void Section19::section19() {
 
@@ -118,5 +125,24 @@ void Section19::section19() {
 //    int& var_rp = max_input_by_value(a,b);
 //
 //    std::cout << " vat_rp: " << var_rp << std::endl;
+
+      const double some_var_const{33.3};
+      double some_var{55.5};
+      double& some_var_ref{some_var};
+      auto x = some_var;
+      auto y = some_var_ref;  // y not a reference y is a copy (ref correctly  auto& )
+      auto& z = some_var_ref;
+      auto ca = some_var_const; // use auto& to hold const info
+
+      ca = 77.5;  // copy not const !!
+
+      std::cout << &some_var << " " << &some_var_ref << " "  << &z <<  " "  << &y << "\n";
+
+      std::cout << sizeof(x) << " " << sizeof(some_var) << "\n";
+
+      int aa{12};
+      int bb{23};
+
+      int& ares = amax(aa,bb);
 
 }
