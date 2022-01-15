@@ -49,6 +49,7 @@ public:
 
 int section(){
 
+
     Dog dog;
 
     dog.set_name("Zoja")->set_dog_breed("Kundelek")->set_dog_age(8);
