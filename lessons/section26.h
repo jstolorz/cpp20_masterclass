@@ -14,19 +14,19 @@ private:
     int dog_age;
 
 public:
-    Dog* set_name(const std::string& name){
+    Dog& set_name(const std::string& name){
         this->name = name;
-        return this;
+        return *this;
     }
 
-    Dog* set_dog_breed(const std::string& breed){
+    Dog& set_dog_breed(const std::string& breed){
         this->dog_breed = breed;
-        return this;
+        return *this;
     }
 
-    Dog* set_dog_age(const int age){
+    Dog& set_dog_age(const int age){
         this->dog_age = age;
-        return this;
+        return *this;
     }
 
     const std::string &getName() const {
@@ -52,7 +52,7 @@ int section(){
 
     Dog dog;
 
-    dog.set_name("Zoja")->set_dog_breed("Kundelek")->set_dog_age(8);
+    dog.set_name("Zoja").set_dog_breed("Kundelek").set_dog_age(8);
 
     std::cout << dog;
 
