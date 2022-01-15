@@ -1,8 +1,9 @@
-#include "lessons/Section22.h"
+#include "lessons/Section26.h"
+
 
 int main() {
 
-    Section22::section22();
+    section();
 
     return 0;
 }

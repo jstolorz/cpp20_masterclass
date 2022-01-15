@@ -1,4 +1,3 @@
-#include <optional>
 #include "Section19.h"
 
 
@@ -59,7 +58,7 @@ int* max_return_pointer(int* a, int* b){
 //    return result;     <- Ref to local variable !!!!
 //}
 
-int& max_input_by_value(int& a, int& b){
+int& max_input_by_value(int& a,int& b){
     if(a > b){
         return a;
     }else{
@@ -75,14 +74,20 @@ auto& amax(int& a, int& b){
     }
 }
 
-std::optional<int> find_character(const std::string& str, char c){
-    for (int i = 0; i < str.size(); ++i) {
-        if(str.c_str()[i] == c){
-            return i;
-        }
-    }
-    return {-1};
+double add(double a, double b){
+    return a + b;
 }
+
+std::string add( std::string& a,std::string& b){
+    return a + b;
+}
+
+const char* add(char* a, const char* b){
+    std::strcat(a,b);
+    return a;
+}
+
+
 
 void Section19::section19() {
 
@@ -155,14 +160,8 @@ void Section19::section19() {
 
       int& ares = amax(aa,bb);
 
-      std::optional<int> item{std::nullopt};
-
-      item = 44;
-
-      if(item.has_value()){
-          std::cout << item.value() << " " << *item << std::endl;
-      }
-
-      std::cout << find_character("Janusz",'d').value() << std::endl;
+    char name[20] {"The sky"};
+    auto result_str  = add (name," is blue");
+    std::cout << "result_str : " <<  result_str;
 
 }

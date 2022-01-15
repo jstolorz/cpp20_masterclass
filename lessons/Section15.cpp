@@ -222,7 +222,7 @@ void Section15::section15() {
 
     std::string  todo{R"(
          Clean the house
-         Walk the dog
+         Walk the Dog
          "Test"
          Do Laundry
          Pick groceries
