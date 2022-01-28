@@ -222,7 +222,7 @@ void Section15::section15() {
 
     std::string  todo{R"(
          Clean the house
-         Walk the Dog
+         Walk the dog
          "Test"
          Do Laundry
          Pick groceries
@@ -264,7 +264,7 @@ void Section15::section15() {
 
     std::cout << sv << " " << sv1 << std::endl;
 
-    char word[] {"Dog"};
+    char word[] {"dog"};
     std::string_view sv2{word};
 
     std::cout << word << " " << sv2 << std::endl;

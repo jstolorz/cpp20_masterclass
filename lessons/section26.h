@@ -7,42 +7,42 @@
 #include <iostream>
 #include <string>
 
-class Dog{
+class dog{
 private:
-    std::string name;
+    std::string dog_name;
     std::string dog_breed;
     int dog_age;
 
 public:
-    Dog& set_name(const std::string& name){
-        this->name = name;
+    dog& set_name(const std::string& name){
+        this->dog_name = name;
         return *this;
     }
 
-    Dog& set_dog_breed(const std::string& breed){
+    dog& set_dog_breed(const std::string& breed){
         this->dog_breed = breed;
         return *this;
     }
 
-    Dog& set_dog_age(const int age){
+    dog& set_dog_age(const int age){
         this->dog_age = age;
         return *this;
     }
 
-    const std::string &getName() const {
-        return name;
+    const std::string &get_name() const {
+        return dog_name;
     }
 
-    const std::string &getDogBreed() const {
+    const std::string &get_dog_breed() const {
         return dog_breed;
     }
 
-    int getDogAge() const {
+    int get_dogAge() const {
         return dog_age;
     }
 
-    friend std::ostream &operator<<(std::ostream &os, const Dog &dog) {
-        os << "name: " << dog.name << " dog_breed: " << dog.dog_breed << " dog_age: " << dog.dog_age;
+    friend std::ostream &operator<<(std::ostream &os, const dog &dog) {
+        os << "dog_name: " << dog.dog_name << " dog_breed: " << dog.dog_breed << " dog_age: " << dog.dog_age;
         return os;
     }
 };
@@ -50,7 +50,7 @@ public:
 int section(){
 
 
-    Dog dog;
+    dog dog;
 
     dog.set_name("Zoja").set_dog_breed("Kundelek").set_dog_age(8);
 

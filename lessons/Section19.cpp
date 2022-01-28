@@ -91,7 +91,7 @@ const char* add(char* a, const char* b){
 
 void Section19::section19() {
 
-    std::string in1{"Dog"};
+    std::string in1{"dog"};
     std::string in2{"Cat"};
     std::string out{};
     int data[]{1,2,3,4,6,7,8};
