@@ -50,24 +50,24 @@ The CXX compiler identification is MSVC, found in "C:/Users/janusz/CLionProjects
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: C:/Users/janusz/CLionProjects/cpp20_masterclass/cmake-build-debug-visual-studio/CMakeFiles/CMakeTmp
 
-Run Build Command(s):nmake -f Makefile /nologo cmTC_eec52\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64\nmake.exe"  -f CMakeFiles\cmTC_eec52.dir\build.make /nologo -L                  CMakeFiles\cmTC_eec52.dir\build
-Building C object CMakeFiles/cmTC_eec52.dir/CMakeCCompilerABI.c.obj
-	C:\Users\janusz\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6461.75\bin\cmake\win\bin\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_eec52.dir\CMakeCCompilerABI.c.obj.d --working-dir=C:\Users\janusz\CLionProjects\cpp20_masterclass\cmake-build-debug-visual-studio\CMakeFiles\CMakeTmp --filter-prefix="Uwaga: w tym pliku:  " -- C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\cl.exe @C:\Users\janusz\AppData\Local\Temp\nmEEC.tmp
+Run Build Command(s):nmake -f Makefile /nologo cmTC_32d62\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64\nmake.exe"  -f CMakeFiles\cmTC_32d62.dir\build.make /nologo -L                  CMakeFiles\cmTC_32d62.dir\build
+Building C object CMakeFiles/cmTC_32d62.dir/CMakeCCompilerABI.c.obj
+	C:\Users\janusz\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6461.75\bin\cmake\win\bin\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_32d62.dir\CMakeCCompilerABI.c.obj.d --working-dir=C:\Users\janusz\CLionProjects\cpp20_masterclass\cmake-build-debug-visual-studio\CMakeFiles\CMakeTmp --filter-prefix="Uwaga: w tym pliku:  " -- C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\cl.exe @C:\Users\janusz\AppData\Local\Temp\nm90B7.tmp
 CMakeCCompilerABI.c
-Linking C executable cmTC_eec52.exe
-	C:\Users\janusz\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6461.75\bin\cmake\win\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\cmTC_eec52.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\mt.exe --manifests -- C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_eec52.dir\objects1.rsp @C:\Users\janusz\AppData\Local\Temp\nmF3B.tmp
+Linking C executable cmTC_32d62.exe
+	C:\Users\janusz\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6461.75\bin\cmake\win\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\cmTC_32d62.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\mt.exe --manifests -- C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_32d62.dir\objects1.rsp @C:\Users\janusz\AppData\Local\Temp\nm921F.tmp
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: C:/Users/janusz/CLionProjects/cpp20_masterclass/cmake-build-debug-visual-studio/CMakeFiles/CMakeTmp
 
-Run Build Command(s):nmake -f Makefile /nologo cmTC_51443\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64\nmake.exe"  -f CMakeFiles\cmTC_51443.dir\build.make /nologo -L                  CMakeFiles\cmTC_51443.dir\build
-Building CXX object CMakeFiles/cmTC_51443.dir/CMakeCXXCompilerABI.cpp.obj
-	C:\Users\janusz\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6461.75\bin\cmake\win\bin\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_51443.dir\CMakeCXXCompilerABI.cpp.obj.d --working-dir=C:\Users\janusz\CLionProjects\cpp20_masterclass\cmake-build-debug-visual-studio\CMakeFiles\CMakeTmp --filter-prefix="Uwaga: w tym pliku:  " -- C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\cl.exe @C:\Users\janusz\AppData\Local\Temp\nm10D0.tmp
+Run Build Command(s):nmake -f Makefile /nologo cmTC_c344f\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64\nmake.exe"  -f CMakeFiles\cmTC_c344f.dir\build.make /nologo -L                  CMakeFiles\cmTC_c344f.dir\build
+Building CXX object CMakeFiles/cmTC_c344f.dir/CMakeCXXCompilerABI.cpp.obj
+	C:\Users\janusz\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6461.75\bin\cmake\win\bin\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_c344f.dir\CMakeCXXCompilerABI.cpp.obj.d --working-dir=C:\Users\janusz\CLionProjects\cpp20_masterclass\cmake-build-debug-visual-studio\CMakeFiles\CMakeTmp --filter-prefix="Uwaga: w tym pliku:  " -- C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\cl.exe @C:\Users\janusz\AppData\Local\Temp\nm9385.tmp
 CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_51443.exe
-	C:\Users\janusz\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6461.75\bin\cmake\win\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\cmTC_51443.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\mt.exe --manifests -- C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_51443.dir\objects1.rsp @C:\Users\janusz\AppData\Local\Temp\nm112F.tmp
+Linking CXX executable cmTC_c344f.exe
+	C:\Users\janusz\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6461.75\bin\cmake\win\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\cmTC_c344f.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\mt.exe --manifests -- C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_c344f.dir\objects1.rsp @C:\Users\janusz\AppData\Local\Temp\nm93E4.tmp
 
 
 
