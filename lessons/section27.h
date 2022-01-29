@@ -82,7 +82,11 @@ int section(){
 
     std::cout << dog << "\n";
 
-    std::cout << dog.compile_dog_info() << "\n";
+    const std::string& str_ref = dog.compile_dog_info();
+
+    std::cout << str_ref << "\n";
+
+    std::cout << "done\n";
 
     return 0;
 }
