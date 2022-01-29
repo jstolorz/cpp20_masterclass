@@ -3,6 +3,11 @@
 #include <iostream>
 #include <string>
 
+struct point{
+    double x;
+    double y;
+};
+
 class dog{
 private:
     std::string dog_name;
@@ -70,6 +75,13 @@ public:
 
 
 int section(){
+
+    // Structured bindings
+    point p1{4.8,6.9};
+
+    auto [a,b] = p1;
+
+    std::cout << a << " " << b << "\n";
 
     int age = 3;
     dog dog("aaa", "bbb", age);
