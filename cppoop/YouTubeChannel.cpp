@@ -41,7 +41,7 @@ void YouTubeChannel::objectTest() {
     youTubeChannel.setPublishedVideoTitles({"C++ for beginer",
                                             "HTML & CSS", "C++ OOP"});
 
-    //std::cout << "Name : " << youTubeChannel.getName() << std::endl;
+    //std::cout << "Name : " << youTubeChannel.get_name() << std::endl;
 
     for(std::string videoTitle: youTubeChannel.getPublishedVideoTitles()) {
         //std::cout << "Video title : " << videoTitle << std::endl;
@@ -51,7 +51,7 @@ void YouTubeChannel::objectTest() {
                                    "Janusz",
                                    {"C++ for advanced","Node.js", "C++ 20"});
 
-    //std::cout << "Name : " << youTubeChannel1.getName() << std::endl;
+    //std::cout << "Name : " << youTubeChannel1.get_name() << std::endl;
 
 
 }

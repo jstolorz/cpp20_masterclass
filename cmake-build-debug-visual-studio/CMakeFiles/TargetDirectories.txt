@@ -1,0 +1,3 @@
+C:/Users/janusz/CLionProjects/cpp20_masterclass/cmake-build-debug-visual-studio/CMakeFiles/rebuild_cache.dir
+C:/Users/janusz/CLionProjects/cpp20_masterclass/cmake-build-debug-visual-studio/CMakeFiles/cpp20_masterclass.dir
+C:/Users/janusz/CLionProjects/cpp20_masterclass/cmake-build-debug-visual-studio/CMakeFiles/edit_cache.dir
