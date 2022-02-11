@@ -25,9 +25,23 @@ unsigned int factorial(unsigned int n){
     return 1;
 }
 
+double sum(double array[], size_t count){
+    double sum{};
+    for (int i = 0; i < count; ++i) {
+        sum += array[i];
+    }
+    return sum;
+}
+
+
 void Section22::section22() {
 
-    std::cout <<  factorial(5) << std::endl;
+    double numbers[] {10.0,20.0,30.0,40.0,50.0};
+
+    double total = sum(numbers, std::size(numbers));
+
+    std::cout << total << std::endl;
+
 }
 
 
