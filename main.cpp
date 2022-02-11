@@ -1,9 +1,7 @@
-#include "lessons/Section27.h"
+#include "lessons/Section28.h"
 
 
 int main() {
-
-
 
     section();
 
