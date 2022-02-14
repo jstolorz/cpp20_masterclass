@@ -51,13 +51,12 @@ public:
     person() = default;
 
     person(const std::string &last_name, const std::string &first_name, int age) : last_name(last_name),
-                                                                                    first_name(first_name), age(&age) {}
+                                                                                   first_name(first_name), age(&age) {}
 
-    person(const person& other)
-     : person(other.get_last_name(),other.get_first_name(), *(other.get_age()))
-    {}
+    person(const person &other)
+            : person(other.get_last_name(), other.get_first_name(), *(other.get_age())) {}
 
-    ~person(){}
+    ~person() {}
 
 public:
 
@@ -86,9 +85,9 @@ public:
     }
 
 public:
-    void print_info(){
+    void print_info() {
         std::cout << "Person object at: " << this << "[Last name: " << last_name << ", First name: "
-        << first_name << ", age: " << *age << ", age address: " << age << " ] \n";
+                  << first_name << ", age: " << *age << ", age address: " << age << " ] \n";
     }
 
 
@@ -98,16 +97,90 @@ private:
     int *age;
 };
 
+class point {
+public:
+    point(double x, double y) : x(&x), y(&y) {}
+
+    point(const point &other)
+            : x(new double(*(other.get_x()))),
+              y(new double(*(other.get_y()))) {
+        std::cout << "Copy constructor\n";
+    }
+
+    point(point &&other)
+            : x(other.get_x()),
+              y(other.get_y()){
+        other.set_x(nullptr);
+        other.set_y(nullptr);
+        std::cout << "Move constructor\n";
+    }
+
+    ~point() {
+       if( x != nullptr){
+           x = nullptr;
+           delete x;
+       }
+
+        if( y != nullptr){
+            y = nullptr;
+            delete y;
+        }
+    }
+
+public:
+
+    double *get_x() const {
+        return x;
+    }
+
+    void set_x(double *x) {
+        point::x = x;
+    }
+
+    double *get_y() const {
+        return y;
+    }
+
+    void set_y(double *y) {
+        point::y = y;
+    }
+
+    friend std::ostream &operator<<(std::ostream &os, const point &point) {
+        os << "x: " << point.x << " y: " << point.y;
+        return os;
+    }
+
+private:
+    double *x{};
+    double *y{};
+};
+
 int section() {
 
 
-    person p1("John","Snow",25);
+    person p1("John", "Snow", 25);
     p1.print_info();
 
     person p2(p1);
 
     p2.print_info();
 
+    std::cout << "-------------\n";
+
+    point p3(point(40.5, 50.5));
+
+    std::cout << p3 << "\n";
+
+    point p4(p3);
+
+    std::cout << p4 << "\n";
+
+    std::cout << p3 << "\n";
+
+    point p5(std::move(p4));
+
+    std::cout << p5 << "\n";
+    std::cout << p4 << "\n";
 
     return 0;
 }
