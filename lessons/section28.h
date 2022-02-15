@@ -4,7 +4,10 @@
 
 #pragma once
 
+
 #include <iostream>
+#include <cassert>
+
 
 const double PI{3.141592};
 
@@ -109,19 +112,19 @@ public:
 
     point(point &&other)
             : x(other.get_x()),
-              y(other.get_y()){
+              y(other.get_y()) {
         other.set_x(nullptr);
         other.set_y(nullptr);
         std::cout << "Move constructor\n";
     }
 
     ~point() {
-       if( x != nullptr){
-           x = nullptr;
-           delete x;
-       }
+        if (x != nullptr) {
+            x = nullptr;
+            delete x;
+        }
 
-        if( y != nullptr){
+        if (y != nullptr) {
             y = nullptr;
             delete y;
         }
@@ -155,32 +158,41 @@ private:
     double *y{};
 };
 
+struct ppt {
+    double x;
+    double y;
+};
+
+class pptc {
+public:
+    pptc(std::initializer_list<double> list) {
+
+        assert(list.size() == 2);
+
+        x = *(list.begin());
+        y = *(list.begin() + 1);
+    }
+
+public:
+
+    void print() {
+        std::cout << x << " " << y << "\n";
+    }
+
+private:
+    double x;
+    double y;
+};
+
 int section() {
 
+    ppt p1{12.3, 45.6};
 
-    person p1("John", "Snow", 25);
-    p1.print_info();
+    std::cout << p1.x << "\n";
 
-    person p2(p1);
+    pptc p2{23.55, 66.7};
 
-    p2.print_info();
-
-    std::cout << "-------------\n";
-
-    point p3(point(40.5, 50.5));
-
-    std::cout << p3 << "\n";
-
-    point p4(p3);
-
-    std::cout << p4 << "\n";
-
-    std::cout << p3 << "\n";
-
-    point p5(std::move(p4));
-
-    std::cout << p5 << "\n";
-    std::cout << p4 << "\n";
+    p2.print();
 
     return 0;
 }
