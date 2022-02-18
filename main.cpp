@@ -14,5 +14,11 @@ int main() {
 
     std::cout << section30::count << "\n";
 
+    point p(12.4,5.7);
+
+    point::print_point_info(p);
+
+    std::cout << "done \n";
+
     return 0;
 }
